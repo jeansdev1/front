@@ -4,110 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto Portfólio - Telescópio">
-    <meta name="author" content="Jean Andre">
-    <meta name="keywords" content="Telescópio, Astronomia, Ciência, HTML, CSS, JavaScript">
-    <link rel="icon" href="./assets/img/favicon.svg" />
-    <title>Telescópio</title>
+    <meta name="description" content="Projeto Portfólio">
+    <meta name="author" content="Generation Brasil">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml" />
+    <title>Universe</title>
 </head>
 
 <body>
-    <!-- Cabeçalho da Página (header) -->
-    <header>
-
-        <!-- Div Conteudo do Cabeçalho -->
-        <div id="header_content">
-
-            <!-- Titulo do Cabeçalho -->
+    <header class="flex menu_container">
+        <div id="header_content" class="menu_content">
             <div id="titulo">
-
-                <!-- Hyperlink -->
-                <a href="#">Telescópio</a>
-
+                <a href="#">Universe</a>
             </div>
 
-            <!-- Conteudo do Menu da Página (header) -->
             <div id="menu">
-
-                <!-- Menu da Página (nav) -->
                 <nav>
-                    <!-- Marcadores não ordenados -->
-                    <ul>
+                    <ul class="flex menu_lista">
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">Sobre</a></li>
                         <li><a href="#contact">Contate-me</a></li>
                     </ul>
                 </nav>
-
             </div>
         </div>
-
     </header>
 
-    <!-- Seção Principal da Página (main) -->
     <main>
-
-        <!-- Seção Home -->
         <section id="home">
-
-            <!-- Texto da Seção Home -->
             <article id="home_texto">
-
-                <h4>Bem-vindo ao Universo da Observação</h4>
-                <h1>Descubra os segredos do cosmos</h1>
-                <p>
-                    Explore as maravilhas do universo com seu telescópio. Veja estrelas, planetas e galáxias como nunca antes!
-                </p>
-
-                <a target="_blank" href="https://hubblesite.org/home">
-                    Explorar
-                </a>
-
+                <h4>Bem-vindo ao Novo Universo</h4>
+                <h1>Mundos diferentes para pessoas diferentes</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni
+                    quisquam</p>
+                <a class="button" target="_blank" href="https://github.com/conteudoGeneration" alt="Github da Generation Brasil">Explorar</a>
             </article>
 
-            <!-- Imagem da Seção Home -->
             <article id="home_imagem">
-                <img src= "assets/img/HST-SM4.jpeg" Imagem de um Telescópio" width="600">
+                <img src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado" width="300">
             </article>
-
         </section>
 
-        <!-- Seção Sobre -->
         <section id="about">
+            <img src="assets/img/user_01.svg" alt="Foto do Perfil do Github" width="450px">
 
-            <!-- Foto do Perfil -->
-            <img src="assets/img/channels4_profile.jpg" alt="Foto do Perfil de Jean Andre" width="450px">
-
-            <!-- Texto Sobre -->
             <article id="sobre_texto">
-
                 <h1>Sobre mim</h1>
-
                 <p>
-                    Sou Jean Andre, apaixonado por astronomia e tecnologia. Através da observação do céu, encontrei uma maneira única de me conectar com o universo e explorar suas maravilhas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quibusdam odit voluptates incidunt inventore rem error harum
+                    blanditiis accusamus vitae, minus fugit consequatur?
+                    Dolorum maiores magni deleniti modi sit laudantium totam!
                 </p>
 
-                <!-- Informações do Github -->
                 <div id="sobre_github">
-
-                    <a target="_blank" href="https://github.com/jeansdev1">Github</a>
+                    <a target="_blank" href="https://github.com/conteudoGeneration">Github</a>
                     <p>200 Seguidores</p>
                     <p>100 Repositórios</p>
-
                 </div>
-
             </article>
-
         </section>
 
-        <!-- Seção Formulário de Contato e Redes Sociais -->
         <section id="contact">
-
-            <!-- Seção de Contato - Redes Sociais-->
             <article id="redes_sociais">
-
                 <h4>Contate-me</h4>
-                <p>Tem alguma dúvida ou quer compartilhar sua experiência? Entre em contato!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod error veniam in voluptatem magni quisquam</p>
 
                 <div id="icones_redes_sociais">
                     <a href="">
@@ -120,40 +87,33 @@
                         <img src="assets/img/instagram.svg" alt="Instagram" />
                     </a>
                 </div>
-
             </article>
 
-            <!-- Seção do Formulário-->
             <form action="" method="POST">
 
                 <label for="name">Nome: </label>
-                <input id="name" type="text" name="name" placeholder="Digite seu nome" >
+                <input id="name" type="text" name="name" placeholder="Digite seu nome">
                 <span id="txtNome"></span>
 
                 <label for="email">E-mail: </label>
-                <input id="email" type="text" name="email" placeholder="Digite seu email" >
+                <input id="email" type="text" name="email" placeholder="Digite seu email">
                 <span id="txtEmail"></span>
-                
+
                 <label for="subject">Assunto: </label>
-                <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" >
+                <input id="subject" type="text" name="subject" placeholder="Digite o título da message">
                 <span id="txtSubject"></span>
 
                 <label for="message">Mensagem: </label>
-                <textarea id="message" name="message" placeholder="Digite sua mensagem" ></textarea>
+                <textarea id="message" name="message" placeholder="Digite sua message"></textarea>
 
-                <button type="submit">Enviar</button> 
-
+                <button type="submit">Enviar</button>
             </form>
-
         </section>
-
     </main>
 
-    <!-- Rodapé da Página (footer) -->
     <footer>
-        Por Jean Andre - 2024
+        Feito com 🧡 por Generation Brasil - 2024
     </footer>
-
+    
 </body>
-
 </html>
